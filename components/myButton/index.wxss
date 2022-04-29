@@ -1,0 +1,36 @@
+/* components/myButton/index.wxss */
+/* 圆形扫码按钮 */
+.san-button {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: #f5ba47;
+  border-radius: 50%;
+  border: 20rpx solid #fce9bc;
+  text-align: center;
+  margin: 80rpx auto 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.san-button image {
+  width: 158rpx;
+  height: 128rpx;
+}
+
+.san-text {
+  color: #fff;
+  margin-top: 10rpx;
+  width: 190rpx;
+}
+
+/* 长方形扫码按钮 */
+.rectangle-btn {
+  color: #000 !important;
+  background-color: #ffb200;
+  display: inline-block;
+  width: 60%;
+  padding: 20rpx 0;
+  border-radius: 10rpx;
+}

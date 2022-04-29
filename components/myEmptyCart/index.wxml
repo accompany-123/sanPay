@@ -1,0 +1,7 @@
+<view class="empty-cart">
+  <view>购物车是空的哦~</view>
+  <view>
+    <image mode="aspectFit" src="../../assets/images/cart.png"></image>
+  </view>
+  <my-button type="rectangle" bindgetQrcode="getQrcode"></my-button>
+</view>

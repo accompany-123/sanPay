@@ -1,0 +1,16 @@
+/* components/myEmptyCart/myEmptyCart.wxss */
+.empty-cart {
+  width: 100%;
+  text-align: center;
+  margin-top: 150rpx;
+}
+
+.empty-cart :nth-child(1) {
+  color: #adabab;
+}
+
+.empty-cart image {
+  width: 256rpx;
+  height: 256rpx;
+  margin: 50rpx 0 100rpx;
+}

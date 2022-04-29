@@ -1,0 +1,21 @@
+<!--pages/balance/balance.wxml-->
+<view>
+  <view class="account-balance">
+    <image src="../../assets/images/user/gold.png"></image>
+    <view>
+      <view>账户余额</view>
+      <view class="monkey">￥4元</view>
+      <view class="detailed" bindtap="gorecord">
+        查看余额明细  
+      </view>
+    </view>
+  </view>
+  <view class="recharge">
+    <view>充值金额</view>
+    <view wx:for="{{price}}" data-index="{{index}}" class="{{flag==index?'recharge-box active':'recharge-box'}}" bindtap="change"  wx:key="index">
+      <view class="price">{{item.price}}</view>
+      <view>{{item.title}}</view>
+    </view>
+    <view class="confirm">去充值</view>
+  </view>
+</view>

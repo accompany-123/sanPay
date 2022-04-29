@@ -1,0 +1,8 @@
+<view class="shopping">
+  <view class="top-swiper">
+    <my-swiper imgList="{{imgList}}"></my-swiper>
+  </view>
+  <view class="san-code">
+      <my-button type="circle" bindgetQrcode="getQrcode"> </my-button>
+  </view>
+</view>

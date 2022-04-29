@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "my-empty-cart": "../../components/myEmptyCart/index",
+    "my-button":"../../components/myButton/index"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "购物车",
+  "navigationBarTextStyle": "black"
+}

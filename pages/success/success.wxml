@@ -1,0 +1,32 @@
+<view class="success">
+    <view class="success-pay">
+        <view>
+            <image src="../../assets/images/face.png"></image>
+            <view>支付成功</view>
+        </view>
+        <view class="goHome" bindtap="toShopping">返回首页</view>
+    </view>
+    <view class="success-like">
+        <view class="like-title"> <text>·</text> 你可能喜欢 <text>·</text></view>
+        <view class="like-column">
+            <view class="like">
+                <image src="../../assets/images/00.png"></image>
+                <view>海南现摘芒果</view>
+                <view class="price">￥29.9</view>
+                <view class="num">
+                    <text>销量201件</text>
+                    <text class="button">立即购买</text>
+                </view>
+            </view>
+            <view class="like">
+                <image src="../../assets/images/02.png"></image>
+                <view>火龙果</view>
+                <view class="price">￥29.9</view>
+                <view class="num">
+                    <text>销量201件</text>
+                    <text class="button">立即购买</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

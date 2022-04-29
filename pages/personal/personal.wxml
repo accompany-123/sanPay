@@ -1,0 +1,39 @@
+<!--pages/personal/personal.wxml-->
+<view>
+  <view class="user-information">
+    <view class="image">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view>
+      <view><open-data type="userNickName"></open-data></view>
+      <view>账户余额：<text style="color: red;">4元</text></view>
+    </view>
+  </view>
+  <view class="user">
+    <view style="margin: 20rpx 0;" bindtap="gobalance">
+      <image src="../../assets/images/user/money.png"></image>
+      我的钱包
+      <text class="give">充就送</text>
+    </view>
+    <view>
+      <image src="../../assets/images/user/shop_order.png"></image>
+      微店订单
+    </view>
+    <view>
+      <image src="../../assets/images/user/online_order.png"></image>
+      优选订单
+    </view>
+    <view>
+      <image src="../../assets/images/user/address.png"></image>
+      地址管理
+    </view>
+    <view>
+      <image src="../../assets/images/user/tel.png"></image>
+      联系客服
+      </view>
+    <view style="margin: 20rpx 0;">
+      <image src="../../assets/images/user/feedback.png"></image>
+      意见反馈
+    </view>
+  </view>
+</view>

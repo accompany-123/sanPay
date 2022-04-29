@@ -1,0 +1,31 @@
+<view class="cart">
+  <view wx:if="{{shopList.length > 0}}">
+    <view class="content">
+      <view wx:for="{{shopList}}" wx:key="index" class="shop-list">
+        <view class="title">{{item.title}}</view>
+        <view class="price">￥{{item.price}}</view>
+        <view class="bottom">
+          <view></view>
+          <view class="num-button">
+            <view class="subtract" data-index="{{index}}" bindtap="sub">-</view>
+            <input type="text" value="{{item.num}}" />
+            <view class="add" data-index="{{index}}" bindtap="add">+</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <view class="footer">
+      <view class="priceAll">
+        总计：<text>￥{{num}}</text>
+      </view>
+      <view class="operation">
+        <view>
+          <my-button type="rectangle-two" bindgetQrcode="getQrcode"></my-button>
+        </view>
+        <view bindtap="goorder">去结算（{{sum}}）</view>
+      </view>
+    </view>
+  </view>
+  <my-empty-cart wx:else></my-empty-cart>
+</view>

@@ -1,0 +1,25 @@
+/* pages/shopping/shopping.wxss */
+.shopping {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* 轮播图 */
+swiper {
+  width: 100%;
+  height: 360rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 扫码按钮 */
+.san-code {
+  width: 100%;
+  height: calc(100% - 360rpx);
+}
+

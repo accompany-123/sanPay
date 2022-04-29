@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/shopping/shopping",
+    "pages/product/product",
+    "pages/personal/personal",
+    "components/mySwiper/index",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/success/success"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#010001",
+    "navigationBarTitleText": "扫码购",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ea986c",
+    "list": [
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "扫码购",
+        "iconPath": "/assets/images/index02.png",
+        "selectedIconPath": "/assets/images/index01.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "每日优选",
+        "iconPath": "/assets/imgs/type.png",
+        "selectedIconPath": "/assets/imgs/types.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/assets/imgs/personage.png",
+        "selectedIconPath": "/assets/imgs/personages.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

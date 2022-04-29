@@ -1,0 +1,110 @@
+/* pages/cart/cart.wxss */
+.cart {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cart .content {
+  width: 100%;
+}
+
+.cart .content .shop-list {
+  width: 100%;
+  height: 220rpx;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.cart .content .shop-list .title,
+.price {
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+
+.cart .content .shop-list .price {
+  font-weight: 600;
+}
+
+.cart .content .shop-list .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .content .shop-list .num-button {
+  display: flex;
+
+}
+
+.cart .num-button input {
+  width: 100rpx;
+  height: 50rpx;
+  border: 1px solid #fd9d26;
+  border-radius: 40rpx;
+  margin: 0 10rpx;
+  text-align: center;
+}
+
+.cart .content .subtract,
+.add {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border: 1px solid #fe9e27;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.cart .content .subtract {
+  color: #fd9d26;
+}
+
+.cart .content .add {
+  border: none;
+  background-color: #fd9d26;
+  color: #fff;
+}
+
+.cart .footer {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.cart .footer .priceAll,
+.operation {
+  flex: 1;
+}
+
+.cart .footer .priceAll {
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #444;
+}
+
+.cart .footer .operation {
+  display: flex;
+  align-items: center;
+}
+
+.cart .footer .operation view {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  line-height: 80rpx;
+}
+
+.cart .footer .operation :nth-child(1) {
+  background-color: #fd9d26;
+}
+
+.cart .footer .operation :nth-child(2) {
+  background-color: #fe0000;
+}

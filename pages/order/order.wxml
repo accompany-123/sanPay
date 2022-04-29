@@ -1,0 +1,29 @@
+<view class="order">
+  <view class="content">
+    <view class="cart-item" wx:if="{{carts.length>0}}" wx:for="{{carts}}" wx:key="index">
+      <view class="desc">
+        <text>{{item.title}}</text>
+        <text style="color:#c00">￥{{item.price}}</text>
+      </view>
+      <view class="item-num">X{{item.num}}</view>
+    </view>
+    <view class="card" style="justify-content: center;" bindtap="showList">共{{allCarts.length}}件商品 {{flag ? '收起' : '展开'}}</view>
+    <view class="card">
+      <view>余额 <text style="color: #c00;">（{{balance}}）</text></view>
+      <switch checked color="#fea62a" bindchange="changeStatus"></switch>
+    </view>
+    <view class="card">
+      <view>商品金额</view>
+      <view style="color: #c00;">￥{{num}}</view>
+    </view>
+    <view class="card">
+      <view>余额减扣</view>
+      <view style="color: #c00;">-￥{{moneyStatus?(balance <= num ?balance:num ) : 0}}</view>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="actual-payment">实际支付：<text>￥{{resultPrice <= 0 ? 0 : resultPrice}}</text>
+      </view>
+      <view class="confirm-payment" bindtap="handlePay">确认支付</view>
+    </view>
+  </view>

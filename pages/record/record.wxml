@@ -1,0 +1,66 @@
+<!--pages/record/record.wxml-->
+<view>
+  <view class="record">
+    <view wx:for="{{record}}" wx:key="index" class="{{flag===index?'active':''}}" data-index="{{index}}" bindtap="changerecord">
+      {{item.title}}
+    </view>
+  </view>
+  <view wx:if="{{flag==0}}">
+      <view class="recharge-record">
+        <view>微信充值：充值：充10元送1元</view>
+        <view style="margin: 25rpx 0;">
+          <text style="color: red;">充值失败</text>
+          <text style="color: #ffd07e;">到账金额：1.1</text>
+        </view>
+        <view>
+          <text>2018-05-23 11:25:16</text>
+          <text>支付金额：0.1</text>
+        </view>
+      </view>
+      <view class="recharge-record">
+        <view>微信充值：充值：充10元送1元</view>
+        <view style="margin: 25rpx 0;">
+          <text style="color: blue;">充值成功</text>
+          <text style="color: #ffd07e;">到账金额：1.1</text>
+        </view>
+        <view>
+          <text>2018-05-23 11:25:16</text>
+          <text>支付金额：0.1</text>
+        </view>
+      </view>
+      <view class="recharge-record">
+        <view>微信充值：充值：充10元送1元</view>
+        <view style="margin: 25rpx 0;">
+          <text style="color: blue;">充值成功</text>
+          <text style="color: #ffd07e;">到账金额：1.1</text>
+        </view>
+        <view>
+          <text>2018-05-23 11:25:16</text>
+          <text>支付金额：0.1</text>
+        </view>
+      </view>
+      <view class="recharge-record">
+        <view>微信充值：充值：充10元送1元</view>
+        <view style="margin: 25rpx 0;">
+          <text style="color: blue;">充值成功</text>
+          <text style="color: #ffd07e;">到账金额：1.1</text>
+        </view>
+        <view>
+          <text>2018-05-23 11:25:16</text>
+          <text>支付金额：0.1</text>
+        </view>
+      </view>
+      <view class="recharge-record">
+        <view>微信充值：充值：充10元送1元</view>
+        <view style="margin: 25rpx 0;">
+          <text style="color: blue;">充值成功</text>
+          <text style="color: #ffd07e;">到账金额：1.1</text>
+        </view>
+        <view>
+          <text>2018-05-23 11:25:16</text>
+          <text>支付金额：0.1</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{flag==1}}">2</view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/record/record.wxss */
+view {
+  font-size: 34rpx;
+}
+.record {
+  width: 100%;
+  display: flex;
+}
+.record view {
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.record .active {
+  border-bottom: 5rpx solid #f6c462;
+}
+.recharge-record {
+  border-bottom:2rpx solid #f2f2f2;
+  padding: 20rpx 10rpx;
+}
+.recharge-record >view{
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}

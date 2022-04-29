@@ -1,0 +1,7 @@
+<!--components/myButton/index.wxml-->
+<view wx:if="{{type=='circle'}}" class="san-button " bindtap="handleQrcode">
+  <image src="../../assets/images/qrcode.png" alt="" />
+  <view class="san-text">请扫描商品条形码</view>
+</view>
+<view class="rectangle-btn" wx:if="{{type=='rectangle'}}" bindtap="handleQrcode">扫一扫条形码</view>
+<view wx:if="{{type=='rectangle-two'}}" bindtap="handleQrcode">继续添加</view>
